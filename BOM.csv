@@ -1,0 +1,12 @@
+name,Part id,order id,manufacturer,quantity,obs1,obs2,obs3,URL
+lightcradter,-,-,EKB,1,electronics/optics,light guide version,4500 model,http://www.ekb.co.il/lightcrafter-fiber.html
+QDSpy,-,-,EulerLab,1,Software,,,http://qdspy.eulerlab.de/
+30 to 60 mm Cage Plate Adapter,LCP02/M,LCP02/M,Thorlabs,2,Optics,,,https://www.thorlabs.com/thorproduct.cfm?partnumber=LCP02/M
+Rod,SR8,SR8,Thorlabs,4,Optics,4mm diameter 203mm long,,https://www.thorlabs.com/thorproduct.cfm?partnumber=SR8
+Main collimator,LLG5A4-A,LLG5A4-A,Thorlabs,1,Optics,350-700nm coating,Zeiss adaptor,https://www.thorlabs.com/thorproduct.cfm?partnumber=LLG5A4-A
+light guide,LLG0538-4,LLG0538-4,Thorlabs,1,Optics,5mm core diameter,1.2m,https://www.thorlabs.com/thorproduct.cfm?partnumber=LLG0538-4
+Lens/filter holder,CP02/M,CP02/M,Thorlabs,8,Optics,30mm threaded,,https://www.thorlabs.com/thorproduct.cfm?partnumber=CP02/M
+Main coll holder,LCP09,LCP09,Thorlabs,1,Optics,60mm cage system,,https://www.thorlabs.com/thorproduct.cfm?partnumber=LCP09
+dichroic holder,LCP30,LCP30,Thorlabs,3,Optics,30-60mm, right angle adapter,https://www.thorlabs.com/thorproduct.cfm?partnumber=LCP30
+,,,,,,,,
+projection surface,,,,,,,,
