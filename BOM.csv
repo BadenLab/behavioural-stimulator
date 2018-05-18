@@ -15,6 +15,6 @@ LED filter,,,ET480/40X,AHF,1,Optics,bandpass F49-480,25mm mounted,-
 LED filter,,,ET420/40M,AHF,1,Optics,bandpass F47-420,25mm mounted,-
 LED filter,,,360/36 brightline,AHF,1,Optics,bandpass F39-370,25mm mounted,-
 UV led,NCSU276AT-0365,Nichia,890-3954,RS,1,Optics,365nm,smd,https://uk.rs-online.com/web/p/uv-leds/8903954/?sra=pstk
-Green led,,,,,1,,,,
-blue led,C503B-BAN-CZ0A0451,Cree,123-8663,RS,1,Optics,470nm,5mm through-hole,https://uk.rs-online.com/web/p/visible-leds/1238663/
-red led,TLCR5800,Vikshay,818-7540,RS,1,Optics,622nm,5mm through-hole,https://uk.rs-online.com/web/p/visible-leds/8187540/?relevancy-data=636F3D3126696E3D4931384E53656172636847656E65726963266C753D656E266D6D3D6D61746368616C6C7061727469616C26706D3D5E2E2A2426706F3D31333326736E3D592673723D2673743D43415443485F414C4C5F44454641554C542673633D592677633D4E4F4E45267573743D746C637235383030267374613D746C63723538303026
+Green led,C503B-BAN-CZ0A0451,Cree,123-8663,RS,1,Optics,470nm,5mm through-hole,https://uk.rs-online.com/web/p/visible-leds/1238663/
+Blue led,VAOL-5EUV0T4 ,Vaol,137-1420,RS,1,Optics,405nm,5mm through-hole,https://uk.rs-online.com/web/p/uv-leds/1371420/
+red led,HLMP-EL1T-Z20DD,Broadcom,146-6157,RS,1,Optics,590nm,5mm through-hole,https://uk.rs-online.com/web/p/visible-leds/1466157/
