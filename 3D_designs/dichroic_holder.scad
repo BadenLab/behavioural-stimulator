@@ -11,7 +11,7 @@
 //variables
 holed=6;
 tol=0.15;
-dist2hol = 47.15-holed;
+dist2hol = 47.15-holed/2;
 basethick=10;
 
 dichx=25.5;
@@ -34,9 +34,9 @@ module main_holder(){
 //dichr place
 
 difference(){
-cube([dist2hol+holed-tol,holed-tol,40],center=true);
+cube([dist2hol+holed-tol,holed-tol+5,40],center=true);
     translate([0,0,8]){
-cube([dichz+1,holed-tol,40],center=true);
+cube([dichz+1,holed-tol+5,40],center=true);
 
     }//translate
     translate([0,0,1.1]){
@@ -78,7 +78,9 @@ cube([10,dy-1,5],center=true);
 }//module
 
 rotate([0,0,0])
+
 union(){
+
 main_holder();
 /*translate([0,5,]){
 rotate([0,90,0]){
@@ -88,6 +90,7 @@ dich_frame1();
 */
 translate([0,0,-dichz/2-5]){
 mount_poles();
+
 }
 }
 
