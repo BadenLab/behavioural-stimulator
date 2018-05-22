@@ -11,8 +11,8 @@
 //variables
 holed=6;
 tol=0.15;
-dist2hol = 47.15-holed/2;
-basethick=10;
+dist2hol = 42.42;//47.15-holed/2;
+basethick=20;
 
 dichx=25.5;
 dichy=1;
@@ -35,21 +35,25 @@ module main_holder(){
 
 difference(){
 cube([dist2hol+holed-tol,holed-tol+5,40],center=true);
-    translate([0,0,8]){
-cube([dichz+1,holed-tol+5,40],center=true);
 
-    }//translate
-    translate([0,0,1.1]){
+translate([0,0,8]){
+    cube([dichz+1,holed-tol+5,40],center=true);
+
+ }//translate
+translate([0,0,1.1]){
     rotate([0,90,0]){
-    dich_frame1(dx=dichx+5+2*tol,dy=dichy+2+2*tol,dz=dichz+5+2*tol);
+        dich_frame1(dx=dichx+5+2*tol,dy=dichy+2+2*tol,dz=dichz+5+2*tol);
     }//rotate
 }//translate
-    translate([0,0,8]){
-        rotate([0,90,0]){
-    dich_frame1(dx=dichx+5+2*tol,dy=dichy+2+2*tol,dz=dichz+5+2*tol);
+translate([0,0,8]){
+    rotate([0,90,0]){
+        dich_frame1(dx=dichx+5+2*tol,dy=dichy+2+2*tol,dz=dichz+5+2*tol);
     }//rotate
 }//translate
 }//difference
+translate([0,0,-22]){
+    cube([dist2hol+holed-tol,holed-tol+5,5],center=true);
+}//translate
 }//module
 
 //translate([0,0,(basethick+15)/2]){
