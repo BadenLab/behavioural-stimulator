@@ -16,7 +16,7 @@ basethick=20;
 
 dichx=25.5;
 dichy=1;
-dichz=36;
+dichz=36.2;
 framey=3;
 
 module mount_poles(){
@@ -64,7 +64,7 @@ module dich_frame1(dx=dichx+5,dy=dichy+2,dz=dichz+5){
 difference(){    
 cube([dx,dy,dz],center=true);
 translate([0,0.5,0]){
-    cube([dx-5+tol,dy+tol,dz-5+tol],center=true);
+    cube([dx-5+tol,dy-0.9+tol,dz-5+tol],center=true);
     }//translate
 
 cube([dx-7.5,dy+1,dz-7.5],center=true);
