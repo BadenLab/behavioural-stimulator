@@ -14,9 +14,9 @@ tol=0.15;
 dist2hol = 42.42;//47.15-holed/2;
 basethick=20;
 
-dichx=25.6;
+dichx=25.4;
 dichy=1;
-dichz=36.4;
+dichz=36.2;
 framey=3;
 
 module mount_poles(){
