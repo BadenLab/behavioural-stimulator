@@ -1,0 +1,666 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:blanking-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Q_PNP_EBC Q1
+U 1 1 5B4F501C
+P 2250 1950
+F 0 "Q1" H 2450 2000 50  0000 L CNN
+F 1 "Q_PNP_EBC" H 2450 1900 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Wide" H 2450 2050 50  0001 C CNN
+F 3 "" H 2250 1950 50  0001 C CNN
+	1    2250 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L Q_PNP_EBC Q4
+U 1 1 5B4F507B
+P 3550 1950
+F 0 "Q4" H 3750 2000 50  0000 L CNN
+F 1 "Q_PNP_EBC" H 3750 1900 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Wide" H 3750 2050 50  0001 C CNN
+F 3 "" H 3550 1950 50  0001 C CNN
+	1    3550 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L 4069 U1
+U 3 1 5B4F5188
+P 1600 1600
+F 0 "U1" H 1795 1715 50  0000 C CNN
+F 1 "4069" H 1790 1475 50  0000 C CNN
+F 2 "" H 1600 1600 60  0001 C CNN
+F 3 "" H 1600 1600 60  0001 C CNN
+	3    1600 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_02x07_Odd_Even J5
+U 1 1 5B4F523D
+P 1100 3400
+F 0 "J5" H 1150 3800 50  0000 C CNN
+F 1 "Conn_02x07_Odd_Even" H 1150 3000 50  0000 C CNN
+F 2 "Connectors_JST:JST_PUD_B14B-PUDSS_2x07x2.00mm_Straight" H 1100 3400 50  0001 C CNN
+F 3 "" H 1100 3400 50  0001 C CNN
+	1    1100 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 5B4F536F
+P 1600 4050
+F 0 "#PWR01" H 1600 3800 50  0001 C CNN
+F 1 "GND" H 1600 3900 50  0000 C CNN
+F 2 "" H 1600 4050 50  0001 C CNN
+F 3 "" H 1600 4050 50  0001 C CNN
+	1    1600 4050
+	1    0    0    -1  
+$EndComp
+NoConn ~ 900  3100
+NoConn ~ 1400 3100
+NoConn ~ 900  3200
+NoConn ~ 1400 3200
+$Comp
+L R R3
+U 1 1 5B4F5497
+P 2550 1550
+F 0 "R3" V 2630 1550 50  0000 C CNN
+F 1 "R" V 2550 1550 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 2480 1550 50  0001 C CNN
+F 3 "" H 2550 1550 50  0001 C CNN
+	1    2550 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 5B4F55D4
+P 3550 1500
+F 0 "R4" V 3630 1500 50  0000 C CNN
+F 1 "R" V 3550 1500 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 3480 1500 50  0001 C CNN
+F 3 "" H 3550 1500 50  0001 C CNN
+	1    3550 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Screw_Terminal_01x04 J13
+U 1 1 5B4F57DA
+P 5650 2100
+F 0 "J13" H 5650 2300 50  0000 C CNN
+F 1 "PWM_controls_driver" H 5650 1800 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_KK-6410-04_04x2.54mm_Straight" H 5650 2100 50  0001 C CNN
+F 3 "" H 5650 2100 50  0001 C CNN
+	1    5650 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Screw_Terminal_01x02 J9
+U 1 1 5B4F588F
+P 3150 900
+F 0 "J9" H 3150 1000 50  0000 C CNN
+F 1 "blanking" H 3150 700 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_KK-6410-02_02x2.54mm_Straight" H 3150 900 50  0001 C CNN
+F 3 "" H 3150 900 50  0001 C CNN
+	1    3150 900 
+	-1   0    0    1   
+$EndComp
+$Comp
+L Q_PNP_EBC Q3
+U 1 1 5B4F60B7
+P 2350 4100
+F 0 "Q3" H 2550 4150 50  0000 L CNN
+F 1 "Q_PNP_EBC" H 2550 4050 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Wide" H 2550 4200 50  0001 C CNN
+F 3 "" H 2350 4100 50  0001 C CNN
+	1    2350 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L Q_PNP_EBC Q5
+U 1 1 5B4F6113
+P 3600 4100
+F 0 "Q5" H 3800 4150 50  0000 L CNN
+F 1 "Q_PNP_EBC" H 3800 4050 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Wide" H 3800 4200 50  0001 C CNN
+F 3 "" H 3600 4100 50  0001 C CNN
+	1    3600 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L Q_PNP_EBC Q2
+U 1 1 5B4F619B
+P 2300 5150
+F 0 "Q2" H 2500 5200 50  0000 L CNN
+F 1 "Q_PNP_EBC" H 2500 5100 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Wide" H 2500 5250 50  0001 C CNN
+F 3 "" H 2300 5150 50  0001 C CNN
+	1    2300 5150
+	0    1    1    0   
+$EndComp
+$Comp
+L Q_PNP_EBC Q6
+U 1 1 5B4F61DC
+P 3650 5150
+F 0 "Q6" H 3850 5200 50  0000 L CNN
+F 1 "Q_PNP_EBC" H 3850 5100 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Wide" H 3850 5250 50  0001 C CNN
+F 3 "" H 3650 5150 50  0001 C CNN
+	1    3650 5150
+	0    1    1    0   
+$EndComp
+$Comp
+L 4069 U1
+U 1 1 5B4F63BD
+P 1200 5300
+F 0 "U1" H 1395 5415 50  0000 C CNN
+F 1 "4069" H 1390 5175 50  0000 C CNN
+F 2 "" H 1200 5300 60  0001 C CNN
+F 3 "" H 1200 5300 60  0001 C CNN
+	1    1200 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5B4F6D3C
+P 2000 4950
+F 0 "R1" V 2080 4950 50  0000 C CNN
+F 1 "R" V 2000 4950 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 1930 4950 50  0001 C CNN
+F 3 "" H 2000 4950 50  0001 C CNN
+	1    2000 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 5B4F70E9
+P 2150 3850
+F 0 "R2" V 2230 3850 50  0000 C CNN
+F 1 "R" V 2150 3850 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" V 2080 3850 50  0001 C CNN
+F 3 "" H 2150 3850 50  0001 C CNN
+	1    2150 3850
+	0    1    1    0   
+$EndComp
+NoConn ~ 900  3600
+$Comp
+L Conn_01x03_Male J2
+U 1 1 5B51F9E6
+P 750 1700
+F 0 "J2" H 750 1900 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 750 1500 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_KK-6410-03_03x2.54mm_Straight" H 750 1700 50  0001 C CNN
+F 3 "" H 750 1700 50  0001 C CNN
+	1    750  1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x03_Male J12
+U 1 1 5B5204E7
+P 3550 2750
+F 0 "J12" H 3550 2950 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 3550 2550 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_KK-6410-03_03x2.54mm_Straight" H 3550 2750 50  0001 C CNN
+F 3 "" H 3550 2750 50  0001 C CNN
+	1    3550 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Conn_01x03_Male J8
+U 1 1 5B5207DB
+P 2200 2800
+F 0 "J8" H 2200 3000 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 2200 2600 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_KK-6410-03_03x2.54mm_Straight" H 2200 2800 50  0001 C CNN
+F 3 "" H 2200 2800 50  0001 C CNN
+	1    2200 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Conn_01x03_Male J7
+U 1 1 5B520B08
+P 2100 4650
+F 0 "J7" H 2100 4850 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 2100 4450 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_KK-6410-03_03x2.54mm_Straight" H 2100 4650 50  0001 C CNN
+F 3 "" H 2100 4650 50  0001 C CNN
+	1    2100 4650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Conn_01x03_Male J10
+U 1 1 5B520B71
+P 3300 4650
+F 0 "J10" H 3300 4850 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 3300 4450 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_KK-6410-03_03x2.54mm_Straight" H 3300 4650 50  0001 C CNN
+F 3 "" H 3300 4650 50  0001 C CNN
+	1    3300 4650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Conn_01x03_Male J6
+U 1 1 5B520C0F
+P 2050 5850
+F 0 "J6" H 2050 6050 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 2050 5650 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_KK-6410-03_03x2.54mm_Straight" H 2050 5850 50  0001 C CNN
+F 3 "" H 2050 5850 50  0001 C CNN
+	1    2050 5850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Conn_01x03_Male J11
+U 1 1 5B520C83
+P 3300 5900
+F 0 "J11" H 3300 6100 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 3300 5700 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_KK-6410-03_03x2.54mm_Straight" H 3300 5900 50  0001 C CNN
+F 3 "" H 3300 5900 50  0001 C CNN
+	1    3300 5900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Conn_01x03_Male J3
+U 1 1 5B52174D
+P 800 4850
+F 0 "J3" H 800 5050 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 800 4650 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_KK-6410-03_03x2.54mm_Straight" H 800 4850 50  0001 C CNN
+F 3 "" H 800 4850 50  0001 C CNN
+	1    800  4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x03_Male J1
+U 1 1 5B5218FD
+P 600 5650
+F 0 "J1" H 600 5850 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 600 5450 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_KK-6410-03_03x2.54mm_Straight" H 600 5650 50  0001 C CNN
+F 3 "" H 600 5650 50  0001 C CNN
+	1    600  5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x07 J4
+U 1 1 5B522157
+P 850 2550
+F 0 "J4" H 850 2950 50  0000 C CNN
+F 1 "Conn_01x07" H 850 2150 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_KK-6410-07_07x2.54mm_Straight" H 850 2550 50  0001 C CNN
+F 3 "" H 850 2550 50  0001 C CNN
+	1    850  2550
+	-1   0    0    1   
+$EndComp
+Connection ~ 2500 2050
+Wire Wire Line
+	900  3500 700  3500
+Wire Wire Line
+	700  3500 700  2050
+Wire Wire Line
+	1400 3300 1600 3300
+Wire Wire Line
+	1600 3300 1600 2400
+Wire Wire Line
+	1600 2400 1150 2400
+Wire Wire Line
+	1400 3700 1600 3700
+Wire Wire Line
+	5250 3600 1400 3600
+Connection ~ 1600 3700
+Wire Wire Line
+	900  3700 900  3850
+Wire Wire Line
+	900  3850 1600 3850
+Connection ~ 1600 3850
+Wire Wire Line
+	2050 1600 2050 1300
+Wire Wire Line
+	650  1300 2550 1300
+Wire Wire Line
+	2550 1300 2550 1400
+Wire Wire Line
+	2550 1700 2250 1700
+Wire Wire Line
+	2250 1700 2250 1750
+Wire Wire Line
+	3550 1750 3550 1650
+Connection ~ 1600 3600
+Wire Wire Line
+	3350 800  3550 800 
+Wire Wire Line
+	3550 800  3550 1350
+Wire Wire Line
+	3750 2050 5150 2050
+Wire Wire Line
+	5150 2050 5150 2200
+Wire Wire Line
+	5250 900  5250 3600
+Wire Wire Line
+	5250 2000 5450 2000
+Wire Wire Line
+	3350 900  5250 900 
+Connection ~ 5250 2000
+Wire Wire Line
+	5150 2200 5450 2200
+Wire Wire Line
+	3550 1750 2950 1750
+Wire Wire Line
+	2950 1750 2950 4850
+Wire Wire Line
+	2950 3800 3600 3800
+Wire Wire Line
+	3600 3800 3600 3900
+Wire Wire Line
+	3650 4950 3650 4850
+Wire Wire Line
+	3650 4850 2950 4850
+Connection ~ 2950 3800
+Wire Wire Line
+	1900 4450 1900 3850
+Wire Wire Line
+	2300 4850 2300 4950
+Wire Wire Line
+	550  3300 900  3300
+Wire Wire Line
+	900  3400 600  3400
+Wire Wire Line
+	1400 3400 1950 3400
+Wire Wire Line
+	1950 3400 1950 4200
+Wire Wire Line
+	1400 3500 1800 3500
+Wire Wire Line
+	1800 2350 1800 5400
+Wire Wire Line
+	3800 4200 5300 4200
+Wire Wire Line
+	5300 4200 5300 2100
+Wire Wire Line
+	5300 2100 5450 2100
+Wire Wire Line
+	5450 2300 5400 2300
+Wire Wire Line
+	5400 2300 5400 5250
+Wire Wire Line
+	5400 5250 3850 5250
+Wire Wire Line
+	2150 4950 2200 4950
+Wire Wire Line
+	2200 4950 2200 4850
+Connection ~ 2200 4850
+Wire Wire Line
+	2200 4850 2300 4850
+Wire Wire Line
+	2350 3900 2350 3850
+Wire Wire Line
+	2350 3850 2300 3850
+Wire Wire Line
+	1900 3850 2000 3850
+Connection ~ 1150 1600
+Connection ~ 600  5300
+Wire Wire Line
+	1150 2400 1150 1900
+Wire Wire Line
+	1150 1900 1000 1900
+Wire Wire Line
+	1000 1900 1000 1700
+Wire Wire Line
+	1000 1700 950  1700
+Wire Wire Line
+	950  1600 1150 1600
+Wire Wire Line
+	950  1800 950  1900
+Wire Wire Line
+	950  1900 650  1900
+Wire Wire Line
+	650  1900 650  1300
+Connection ~ 2050 1300
+Wire Wire Line
+	1850 4950 1650 4950
+Wire Wire Line
+	1650 4950 1650 5750
+Wire Wire Line
+	1700 4450 1900 4450
+Wire Wire Line
+	600  3400 600  5450
+Wire Wire Line
+	2450 2050 2750 2050
+Wire Wire Line
+	2750 2050 2750 2400
+Wire Wire Line
+	2750 2400 3550 2400
+Wire Wire Line
+	3550 2400 3550 2550
+Wire Wire Line
+	3450 2550 3450 2300
+Wire Wire Line
+	3450 2300 3350 2300
+Wire Wire Line
+	3350 2300 3350 2050
+Wire Wire Line
+	3650 2550 3650 2250
+Wire Wire Line
+	3650 2250 3800 2250
+Wire Wire Line
+	3800 2250 3800 2050
+Connection ~ 3800 2050
+Wire Wire Line
+	2200 2600 2200 2300
+Wire Wire Line
+	2200 2300 1850 2300
+Wire Wire Line
+	1850 2300 1850 2050
+Wire Wire Line
+	1850 2050 700  2050
+Wire Wire Line
+	2100 2600 2100 2100
+Wire Wire Line
+	2100 2100 2050 2100
+Wire Wire Line
+	2050 2100 2050 2050
+Wire Wire Line
+	2300 2600 2300 2300
+Wire Wire Line
+	2300 2300 2500 2300
+Wire Wire Line
+	2500 2300 2500 2050
+Wire Wire Line
+	2100 4450 2100 4200
+Wire Wire Line
+	2100 4200 1950 4200
+Wire Wire Line
+	2000 4450 2000 4150
+Wire Wire Line
+	2000 4150 2150 4150
+Wire Wire Line
+	2150 4150 2150 4200
+Wire Wire Line
+	2200 4450 2500 4450
+Wire Wire Line
+	2500 4450 2500 4350
+Wire Wire Line
+	2500 4350 2600 4350
+Wire Wire Line
+	2600 4350 2600 4200
+Connection ~ 2600 4200
+Wire Wire Line
+	2550 4200 3300 4200
+Wire Wire Line
+	3300 4200 3300 4450
+Wire Wire Line
+	3200 4450 3200 4150
+Wire Wire Line
+	3200 4150 3400 4150
+Wire Wire Line
+	3400 4150 3400 4200
+Wire Wire Line
+	3400 4450 3900 4450
+Wire Wire Line
+	3900 4450 3900 4200
+Connection ~ 3900 4200
+Wire Wire Line
+	1800 5400 2050 5400
+Wire Wire Line
+	2050 5400 2050 5650
+Wire Wire Line
+	1950 5650 1950 5250
+Wire Wire Line
+	1950 5250 2100 5250
+Wire Wire Line
+	2150 5650 2550 5650
+Wire Wire Line
+	2550 5650 2550 5250
+Connection ~ 2550 5250
+Wire Wire Line
+	2500 5250 3300 5250
+Wire Wire Line
+	3300 5250 3300 5700
+Wire Wire Line
+	3200 5700 3200 5150
+Wire Wire Line
+	3200 5150 3450 5150
+Wire Wire Line
+	3450 5150 3450 5250
+Wire Wire Line
+	3400 5700 3900 5700
+Wire Wire Line
+	3900 5700 3900 5250
+Connection ~ 3900 5250
+Wire Wire Line
+	600  5450 900  5450
+Wire Wire Line
+	900  5450 900  5650
+Wire Wire Line
+	900  5650 800  5650
+Wire Wire Line
+	800  5550 800  5350
+Wire Wire Line
+	800  5350 750  5350
+Wire Wire Line
+	750  5350 750  5300
+Wire Wire Line
+	1650 5750 800  5750
+Connection ~ 1650 5300
+Wire Wire Line
+	550  3300 550  4600
+Wire Wire Line
+	550  4600 1150 4600
+Wire Wire Line
+	1150 4600 1150 4850
+Wire Wire Line
+	1150 4850 1000 4850
+Wire Wire Line
+	1000 4750 1000 4550
+Wire Wire Line
+	1000 4550 800  4550
+Wire Wire Line
+	800  4550 800  4450
+Wire Wire Line
+	1000 4950 1550 4950
+Wire Wire Line
+	1550 4950 1550 4600
+Wire Wire Line
+	1550 4600 1750 4600
+Wire Wire Line
+	1750 4600 1750 4450
+Connection ~ 1750 4450
+Wire Wire Line
+	1600 2250 1600 4050
+Wire Wire Line
+	1050 2850 1050 3000
+Wire Wire Line
+	1050 3000 750  3000
+Wire Wire Line
+	750  3000 750  3300
+Connection ~ 750  3300
+Wire Wire Line
+	1500 3300 1500 2750
+Wire Wire Line
+	1500 2750 1050 2750
+Connection ~ 1500 3300
+Wire Wire Line
+	750  3400 750  3350
+Wire Wire Line
+	750  3350 850  3350
+Wire Wire Line
+	850  3350 850  2950
+Wire Wire Line
+	850  2950 1200 2950
+Wire Wire Line
+	1200 2950 1200 2650
+Wire Wire Line
+	1200 2650 1050 2650
+Connection ~ 750  3400
+Wire Wire Line
+	1700 3400 1700 2550
+Wire Wire Line
+	1700 2550 1050 2550
+Connection ~ 1700 3400
+Wire Wire Line
+	1300 2050 1300 2450
+Wire Wire Line
+	1300 2450 1050 2450
+Connection ~ 1300 2050
+Wire Wire Line
+	1800 2350 1050 2350
+Connection ~ 1800 3500
+Wire Wire Line
+	1600 2250 1050 2250
+$Comp
+L 74AHC1G14 U?
+U 1 1 5B52336B
+P 1250 4450
+F 0 "U?" H 1395 4565 50  0000 C CNN
+F 1 "74AHC1G14" H 1450 4350 50  0000 C CNN
+F 2 "" H 1345 4315 50  0001 C CNN
+F 3 "" H 1395 4565 50  0001 C CNN
+	1    1250 4450
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
