@@ -1,0 +1,11 @@
+Reference, Quantity, Value, Footprint, Datasheet
+J13 ,1,"PWM_controls_driver","Connectors_Molex:Molex_KK-6410-04_04x2.54mm_Straight",""
+J14 ,1,"Conn_01x02","Connectors:PINHEAD1-2",""
+J1 J10 J11 J12 J2 J6 J7 J8 ,8,"Conn_01x03_Male","Connectors_Molex:Molex_KK-6410-03_03x2.54mm_Straight",""
+J3 ,1,"invert_select","Connectors_Molex:Molex_KK-6410-03_03x2.54mm_Straight",""
+J4 ,1,"to_LCr_j29(alt)","Connectors_Molex:Molex_KK-6410-07_07x2.54mm_Straight",""
+J5 ,1,"to_LCr_J29","Connectors_JST:JST_PUD_B14B-PUDSS_2x07x2.00mm_Straight",""
+J9 ,1,"blanking","Connectors_Molex:Molex_KK-6410-02_02x2.54mm_Straight",""
+Q1 Q2 Q3 Q4 Q5 Q6 ,6,"Q_PNP_EBC","TO_SOT_Packages_THT:TO-92_Inline_Wide",""
+R1 R2 R3 R4 ,4,"R","Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical",""
+U1 U2 U3 ,3,"74AHC1G14","Housings_SSOP:TSOP-5_1.65x3.05mm_Pitch0.95mm",""

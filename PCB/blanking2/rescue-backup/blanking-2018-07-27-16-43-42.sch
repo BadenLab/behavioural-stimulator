@@ -1,6 +1,38 @@
-EESchema Schematic File Version 4
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
 LIBS:blanking-cache
-EELAYER 26 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -15,7 +47,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Device:Q_PNP_EBC Q1
+L Q_PNP_EBC Q1
 U 1 1 5B4F501C
 P 4650 2500
 F 0 "Q1" H 4850 2550 50  0000 L CNN
@@ -26,7 +58,7 @@ F 3 "" H 4650 2500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:Q_PNP_EBC Q4
+L Q_PNP_EBC Q4
 U 1 1 5B4F507B
 P 5950 2500
 F 0 "Q4" H 6150 2550 50  0000 L CNN
@@ -37,7 +69,7 @@ F 3 "" H 5950 2500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L conn:Conn_02x07_Odd_Even J5
+L Conn_02x07_Odd_Even J5
 U 1 1 5B4F523D
 P 3500 3950
 F 0 "J5" H 3550 4350 50  0000 C CNN
@@ -48,7 +80,7 @@ F 3 "" H 3500 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR01
+L GND #PWR01
 U 1 1 5B4F536F
 P 4000 4600
 F 0 "#PWR01" H 4000 4350 50  0001 C CNN
@@ -63,7 +95,7 @@ NoConn ~ 3800 3650
 NoConn ~ 3300 3750
 NoConn ~ 3800 3750
 $Comp
-L Device:R R3
+L R R3
 U 1 1 5B4F5497
 P 4950 2100
 F 0 "R3" V 5030 2100 50  0000 C CNN
@@ -74,7 +106,7 @@ F 3 "" H 4950 2100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R4
+L R R4
 U 1 1 5B4F55D4
 P 5950 2050
 F 0 "R4" V 6030 2050 50  0000 C CNN
@@ -85,7 +117,7 @@ F 3 "" H 5950 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L conn:Screw_Terminal_01x04 J13
+L Screw_Terminal_01x04 J13
 U 1 1 5B4F57DA
 P 8050 2650
 F 0 "J13" H 8050 2850 50  0000 C CNN
@@ -96,7 +128,7 @@ F 3 "" H 8050 2650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L conn:Screw_Terminal_01x02 J9
+L Screw_Terminal_01x02 J9
 U 1 1 5B4F588F
 P 5550 1450
 F 0 "J9" H 5550 1550 50  0000 C CNN
@@ -107,7 +139,7 @@ F 3 "" H 5550 1450 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:Q_PNP_EBC Q3
+L Q_PNP_EBC Q3
 U 1 1 5B4F60B7
 P 4750 4650
 F 0 "Q3" H 4950 4700 50  0000 L CNN
@@ -119,7 +151,7 @@ F 4 "enable_pwm" H 4750 4650 60  0001 C CNN "Field4"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:Q_PNP_EBC Q5
+L Q_PNP_EBC Q5
 U 1 1 5B4F6113
 P 6000 4650
 F 0 "Q5" H 6200 4700 50  0000 L CNN
@@ -131,7 +163,7 @@ F 4 "pwm_blank" H 6000 4650 60  0001 C CNN "Field4"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:Q_PNP_EBC Q2
+L Q_PNP_EBC Q2
 U 1 1 5B4F619B
 P 4700 5700
 F 0 "Q2" H 4900 5750 50  0000 L CNN
@@ -142,18 +174,18 @@ F 3 "" H 4700 5700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:Q_PNP_EBC Q6
+L Q_PNP_EBC Q6
 U 1 1 5B4F61DC
 P 6050 5700
 F 0 "Q6" H 6250 5750 50  0000 L CNN
-F 1 "blank_trans3_PNP_EBC" V 6250 5400 50  0000 L CNN
+F 1 "Q_PNP_EBC" H 6250 5650 50  0000 L CNN
 F 2 "TO_SOT_Packages_THT:TO-92_Inline_Wide" H 6250 5800 50  0001 C CNN
 F 3 "" H 6050 5700 50  0001 C CNN
 	1    6050 5700
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R1
+L R R1
 U 1 1 5B4F6D3C
 P 4400 5500
 F 0 "R1" V 4480 5500 50  0000 C CNN
@@ -164,7 +196,7 @@ F 3 "" H 4400 5500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R2
+L R R2
 U 1 1 5B4F70E9
 P 4550 4400
 F 0 "R2" V 4630 4400 50  0000 C CNN
@@ -176,55 +208,55 @@ F 3 "" H 4550 4400 50  0001 C CNN
 $EndComp
 NoConn ~ 3300 4150
 $Comp
-L conn:Conn_01x03_Male J2
+L Conn_01x03_Male J2
 U 1 1 5B51F9E6
 P 3150 2250
 F 0 "J2" H 3150 2450 50  0000 C CNN
-F 1 "inverter/non_inverter1" H 3150 2050 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 3150 2050 50  0000 C CNN
 F 2 "Connectors_Molex:Molex_KK-6410-03_03x2.54mm_Straight" H 3150 2250 50  0001 C CNN
 F 3 "" H 3150 2250 50  0001 C CNN
 	1    3150 2250
 	1    0    0    -1  
 $EndComp
 $Comp
-L conn:Conn_01x03_Male J12
+L Conn_01x03_Male J12
 U 1 1 5B5204E7
 P 5950 3300
 F 0 "J12" H 5950 3500 50  0000 C CNN
-F 1 "blank/non_blank1" H 5950 3100 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 5950 3100 50  0000 C CNN
 F 2 "Connectors_Molex:Molex_KK-6410-03_03x2.54mm_Straight" H 5950 3300 50  0001 C CNN
 F 3 "" H 5950 3300 50  0001 C CNN
 	1    5950 3300
 	0    -1   -1   0   
 $EndComp
 $Comp
-L conn:Conn_01x03_Male J8
+L Conn_01x03_Male J8
 U 1 1 5B5207DB
 P 4600 3350
 F 0 "J8" H 4600 3550 50  0000 C CNN
-F 1 "enable/non_enbale1" H 4600 3150 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 4600 3150 50  0000 C CNN
 F 2 "Connectors_Molex:Molex_KK-6410-03_03x2.54mm_Straight" H 4600 3350 50  0001 C CNN
 F 3 "" H 4600 3350 50  0001 C CNN
 	1    4600 3350
 	0    -1   -1   0   
 $EndComp
 $Comp
-L conn:Conn_01x03_Male J7
+L Conn_01x03_Male J7
 U 1 1 5B520B08
 P 4500 5200
 F 0 "J7" H 4500 5400 50  0000 C CNN
-F 1 "enab/no_enab2" V 4450 5200 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 4500 5000 50  0000 C CNN
 F 2 "Connectors_Molex:Molex_KK-6410-03_03x2.54mm_Straight" H 4500 5200 50  0001 C CNN
 F 3 "" H 4500 5200 50  0001 C CNN
 	1    4500 5200
 	0    -1   -1   0   
 $EndComp
 $Comp
-L conn:Conn_01x03_Male J10
+L Conn_01x03_Male J10
 U 1 1 5B520B71
 P 5700 5200
 F 0 "J10" H 5700 5400 50  0000 C CNN
-F 1 "blank/nonblank2" V 5650 5200 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 5700 5000 50  0000 C CNN
 F 2 "Connectors_Molex:Molex_KK-6410-03_03x2.54mm_Straight" H 5700 5200 50  0001 C CNN
 F 3 "" H 5700 5200 50  0001 C CNN
 F 4 "blanking_select" H 5700 5200 60  0001 C CNN "Field4"
@@ -232,51 +264,51 @@ F 4 "blanking_select" H 5700 5200 60  0001 C CNN "Field4"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L conn:Conn_01x03_Male J6
+L Conn_01x03_Male J6
 U 1 1 5B520C0F
 P 4450 6400
 F 0 "J6" H 4450 6600 50  0000 C CNN
-F 1 "enab/non_enab3" V 4350 6400 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 4450 6200 50  0000 C CNN
 F 2 "Connectors_Molex:Molex_KK-6410-03_03x2.54mm_Straight" H 4450 6400 50  0001 C CNN
 F 3 "" H 4450 6400 50  0001 C CNN
 	1    4450 6400
 	0    -1   -1   0   
 $EndComp
 $Comp
-L conn:Conn_01x03_Male J11
+L Conn_01x03_Male J11
 U 1 1 5B520C83
 P 5700 6450
 F 0 "J11" H 5700 6650 50  0000 C CNN
-F 1 "blank/nonblank3" V 5600 6450 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 5700 6250 50  0000 C CNN
 F 2 "Connectors_Molex:Molex_KK-6410-03_03x2.54mm_Straight" H 5700 6450 50  0001 C CNN
 F 3 "" H 5700 6450 50  0001 C CNN
 	1    5700 6450
 	0    -1   -1   0   
 $EndComp
 $Comp
-L conn:Conn_01x03_Male J3
+L Conn_01x03_Male J3
 U 1 1 5B52174D
 P 3200 5400
 F 0 "J3" H 3200 5600 50  0000 C CNN
-F 1 "inverter/non_inverter2" H 3200 5200 50  0000 C CNN
+F 1 "invert_select" H 3200 5200 50  0000 C CNN
 F 2 "Connectors_Molex:Molex_KK-6410-03_03x2.54mm_Straight" H 3200 5400 50  0001 C CNN
 F 3 "" H 3200 5400 50  0001 C CNN
 	1    3200 5400
 	1    0    0    -1  
 $EndComp
 $Comp
-L conn:Conn_01x03_Male J1
+L Conn_01x03_Male J1
 U 1 1 5B5218FD
 P 3000 6200
 F 0 "J1" H 3000 6400 50  0000 C CNN
-F 1 "inverter/non_inverter3" H 3000 6000 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 3000 6000 50  0000 C CNN
 F 2 "Connectors_Molex:Molex_KK-6410-03_03x2.54mm_Straight" H 3000 6200 50  0001 C CNN
 F 3 "" H 3000 6200 50  0001 C CNN
 	1    3000 6200
 	1    0    0    -1  
 $EndComp
 $Comp
-L blanking-rescue:74AHC1G14 U2
+L 74AHC1G14 U2
 U 1 1 5B52336B
 P 3650 5000
 F 0 "U2" H 3795 5115 50  0000 C CNN
@@ -287,7 +319,7 @@ F 3 "" H 3795 5115 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L blanking-rescue:74AHC1G14 U1
+L 74AHC1G14 U1
 U 1 1 5B56D668
 P 3600 5850
 F 0 "U1" H 3745 5965 50  0000 C CNN
@@ -298,7 +330,7 @@ F 3 "" H 3745 5965 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L blanking-rescue:74AHC1G14 U3
+L 74AHC1G14 U3
 U 1 1 5B56DF04
 P 4050 2150
 F 0 "U3" H 4195 2265 50  0000 C CNN
@@ -309,18 +341,18 @@ F 3 "" H 4195 2265 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L conn:Conn_01x02 J14
+L Conn_01x02 J14
 U 1 1 5B56E625
 P 4250 1450
 F 0 "J14" H 4250 1550 50  0000 C CNN
-F 1 "vcc_inverters" H 4250 1250 50  0000 C CNN
+F 1 "Conn_01x02" H 4250 1250 50  0000 C CNN
 F 2 "Connectors:PINHEAD1-2" H 4250 1450 50  0001 C CNN
 F 3 "" H 4250 1450 50  0001 C CNN
 	1    4250 1450
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R6
+L R R6
 U 1 1 5B56FDB7
 P 5700 4250
 F 0 "R6" V 5780 4250 50  0000 C CNN
@@ -331,7 +363,7 @@ F 3 "" H 5700 4250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R5
+L R R5
 U 1 1 5B57004E
 P 5650 5500
 F 0 "R5" V 5730 5500 50  0000 C CNN
@@ -351,7 +383,7 @@ Wire Wire Line
 Wire Wire Line
 	3800 4250 4000 4250
 Wire Wire Line
-	7650 4150 4000 4150
+	7650 4150 3800 4150
 Connection ~ 4000 4250
 Wire Wire Line
 	3300 4250 3300 4400
@@ -359,7 +391,7 @@ Wire Wire Line
 	3300 4400 4000 4400
 Connection ~ 4000 4400
 Wire Wire Line
-	3050 1850 4500 1850
+	3050 1850 4950 1850
 Wire Wire Line
 	4950 1850 4950 1950
 Wire Wire Line
@@ -372,13 +404,13 @@ Connection ~ 4000 4150
 Wire Wire Line
 	5750 1350 5950 1350
 Wire Wire Line
-	5950 1350 5950 1650
+	5950 1350 5950 1900
 Wire Wire Line
-	6150 2600 6200 2600
+	6150 2600 7550 2600
 Wire Wire Line
 	7550 2600 7550 2750
 Wire Wire Line
-	7650 1450 7650 2550
+	7650 1450 7650 4150
 Wire Wire Line
 	7650 2550 7850 2550
 Wire Wire Line
@@ -387,7 +419,7 @@ Connection ~ 7650 2550
 Wire Wire Line
 	7550 2750 7850 2750
 Wire Wire Line
-	5350 1650 5350 4350
+	5350 1650 5350 5500
 Wire Wire Line
 	6000 4350 6000 4450
 Wire Wire Line
@@ -398,6 +430,8 @@ Wire Wire Line
 Wire Wire Line
 	4700 5400 4700 5500
 Wire Wire Line
+	2950 3850 3300 3850
+Wire Wire Line
 	3300 3950 3000 3950
 Wire Wire Line
 	3800 3950 4350 3950
@@ -406,7 +440,7 @@ Wire Wire Line
 Wire Wire Line
 	3800 4050 4200 4050
 Wire Wire Line
-	6200 4750 6300 4750
+	6200 4750 7700 4750
 Wire Wire Line
 	7700 4750 7700 2650
 Wire Wire Line
@@ -416,11 +450,12 @@ Wire Wire Line
 Wire Wire Line
 	7800 2850 7800 5800
 Wire Wire Line
-	7800 5800 6300 5800
+	7800 5800 6250 5800
 Wire Wire Line
 	4550 5500 4600 5500
 Wire Wire Line
 	4600 5500 4600 5400
+Connection ~ 4600 5400
 Wire Wire Line
 	4600 5400 4700 5400
 Wire Wire Line
@@ -429,6 +464,7 @@ Wire Wire Line
 	4750 4400 4700 4400
 Wire Wire Line
 	4300 4400 4400 4400
+Connection ~ 3000 5850
 Wire Wire Line
 	3550 2450 3400 2450
 Wire Wire Line
@@ -446,9 +482,11 @@ Wire Wire Line
 Wire Wire Line
 	4250 5500 4050 5500
 Wire Wire Line
-	4100 5000 4150 5000
+	4100 5000 4300 5000
 Wire Wire Line
-	4850 2600 4900 2600
+	3000 3950 3000 6000
+Wire Wire Line
+	4850 2600 5150 2600
 Wire Wire Line
 	5150 2600 5150 2950
 Wire Wire Line
@@ -508,7 +546,7 @@ Wire Wire Line
 	5000 4900 5000 4750
 Connection ~ 5000 4750
 Wire Wire Line
-	4950 4750 5000 4750
+	4950 4750 5700 4750
 Wire Wire Line
 	5700 4750 5700 5000
 Wire Wire Line
@@ -536,7 +574,7 @@ Wire Wire Line
 	4950 6200 4950 5800
 Connection ~ 4950 5800
 Wire Wire Line
-	4900 5800 4950 5800
+	4900 5800 5700 5800
 Wire Wire Line
 	5700 5800 5700 6250
 Wire Wire Line
@@ -585,17 +623,20 @@ Wire Wire Line
 Wire Wire Line
 	4150 5150 4150 5000
 Connection ~ 4150 5000
+Connection ~ 3150 3850
 Wire Wire Line
 	3600 5200 3600 5300
 Wire Wire Line
 	3600 5300 3650 5300
 Wire Wire Line
-	3650 4500 3650 5300
+	3650 4500 3650 6050
 Wire Wire Line
 	3650 4500 4000 4500
 Connection ~ 4000 4500
 Wire Wire Line
-	4050 5500 4050 5850
+	4050 5850 4050 5850
+Wire Wire Line
+	4050 5500 4050 6300
 Connection ~ 4050 5850
 Wire Wire Line
 	3150 5900 3150 5850
@@ -606,7 +647,7 @@ Wire Wire Line
 	4500 2150 4500 1850
 Connection ~ 4500 1850
 Wire Wire Line
-	2650 1450 3800 1450
+	2650 1450 4050 1450
 Wire Wire Line
 	3800 1450 3800 1950
 Wire Wire Line
@@ -614,7 +655,7 @@ Wire Wire Line
 Wire Wire Line
 	3600 4800 2650 4800
 Wire Wire Line
-	2650 1450 2650 4800
+	2650 1450 2650 5650
 Connection ~ 3800 1450
 Wire Wire Line
 	2650 5650 3550 5650
@@ -656,7 +697,7 @@ Wire Wire Line
 Wire Wire Line
 	5900 5400 6050 5400
 Wire Wire Line
-	4000 3900 4000 4150
+	4000 3900 4000 4600
 Wire Wire Line
 	4000 3900 4100 3900
 Wire Wire Line
@@ -664,7 +705,7 @@ Wire Wire Line
 Wire Wire Line
 	4100 3550 4000 3550
 Wire Wire Line
-	4000 3550 4000 2450
+	4000 3550 4000 2350
 Wire Wire Line
 	4000 3850 4000 3600
 Wire Wire Line
@@ -677,50 +718,4 @@ Wire Wire Line
 	3550 2700 3550 2450
 Wire Wire Line
 	4200 4050 4200 5950
-Wire Wire Line
-	4900 2600 5150 2600
-Wire Wire Line
-	4000 4250 4000 4400
-Wire Wire Line
-	4000 4400 4000 4500
-Wire Wire Line
-	4000 4150 3800 4150
-Wire Wire Line
-	4000 4150 4000 4250
-Wire Wire Line
-	7650 2550 7650 4150
-Wire Wire Line
-	5350 4350 5350 5500
-Wire Wire Line
-	6200 2600 7550 2600
-Wire Wire Line
-	5000 4750 5700 4750
-Wire Wire Line
-	6300 4750 7700 4750
-Wire Wire Line
-	4950 5800 5700 5800
-Wire Wire Line
-	6300 5800 6250 5800
-Wire Wire Line
-	4150 5000 4300 5000
-Wire Wire Line
-	4000 4500 4000 4600
-Wire Wire Line
-	4050 5850 4050 6300
-Wire Wire Line
-	3650 5300 3650 6050
-Wire Wire Line
-	4500 1850 4950 1850
-Wire Wire Line
-	3800 1450 4050 1450
-Wire Wire Line
-	2650 4800 2650 5650
-Wire Wire Line
-	4000 2450 4000 2350
-Wire Wire Line
-	5950 1650 5950 1900
-Wire Wire Line
-	2950 3850 3300 3850
-Wire Wire Line
-	3000 3950 3000 6000
 $EndSCHEMATC
