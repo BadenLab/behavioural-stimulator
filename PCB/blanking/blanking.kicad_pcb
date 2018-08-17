@@ -1467,7 +1467,7 @@
     (fp_text reference REF** (at 0 -4.2) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value MountingHole_3.2mm_M3 (at 0 4.2) (layer F.Fab)
+    (fp_text value MountingHole_3.2mm_M3 (at 0 4) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text user %R (at 0.3 0) (layer F.Fab)
@@ -1516,7 +1516,7 @@
     (pad 1 np_thru_hole circle (at 0 0) (size 3.2 3.2) (drill 3.2) (layers *.Cu *.Mask))
   )
 
-  (target plus (at 173.45 83.275) (size 5) (width 0.15) (layer Edge.Cuts))
+  (target plus (at 184.35879 78.906288) (size 5) (width 0.15) (layer Edge.Cuts))
   (gr_text BRG- (at 183.7 64.025 90) (layer F.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
@@ -1749,8 +1749,8 @@
   (segment (start 215.35 82.275) (end 194.95 82.275) (width 0.25) (layer F.Cu) (net 29))
   (segment (start 255.45 79.525) (end 247.1 79.525) (width 0.25) (layer F.Cu) (net 29))
   (segment (start 247.1 79.525) (end 243.75 82.875) (width 0.25) (layer F.Cu) (net 29))
-  (segment (start 215.95 82.875) (end 215.35 82.275) (width 0.25) (layer F.Cu) (net 29))
-  (segment (start 243.75 82.875) (end 215.95 82.875) (width 0.25) (layer F.Cu) (net 29))
+  (segment (start 230.075002 82.875) (end 229.475002 82.275) (width 0.25) (layer F.Cu) (net 29))
+  (segment (start 243.75 82.875) (end 230.075002 82.875) (width 0.25) (layer F.Cu) (net 29))
   (segment (start 233.790001 68.575001) (end 233.790001 68.315001) (width 0.25) (layer F.Cu) (net 30))
   (segment (start 230.7 65.315) (end 232.95 63.065) (width 0.25) (layer F.Cu) (net 30))
   (segment (start 234.49 69.275) (end 233.790001 68.575001) (width 0.25) (layer F.Cu) (net 30))
@@ -1813,7 +1813,7 @@
   (segment (start 205.51 67.675) (end 201.65 63.815) (width 0.25) (layer F.Cu) (net 38))
   (segment (start 205.55 67.675) (end 205.51 67.675) (width 0.25) (layer F.Cu) (net 38))
 
-  (zone (net 10) (net_name GND) (layer B.Cu) (tstamp 5B604334) (hatch edge 0.508)
+  (zone (net 10) (net_name GND) (layer B.Cu) (tstamp 5B618F95) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
